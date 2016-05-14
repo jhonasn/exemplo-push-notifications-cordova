@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Enviar notificação</title>
+    </head>
+    <body>
+
+        <form action="/api/enviar-notificacao" method="post">
+            <h1>Enviar notificação</h1>
+            <label>
+                Título:
+                <input type="text" name="title" value="">
+            </label>
+            <label>
+                Mensagem:
+                <input type="text" name="message" value="">
+            </label>
+            <label>
+                Contagem:
+                <input type="number" name="count" value="1">
+            </label>
+            <button type="submit" name="send">Enviar</button>
+        </form>
+
+        <br>
+        <hr>
+        <form action="/api/registrar-dispositivo" method="post">
+            <h1>Registrar Dispositivo</h1>
+            <label>
+                Id:
+                <input type="text" name="id" value="">
+            </label>
+            <button type="submit" name="send">Enviar</button>
+        </form>
+
+    </body>
+</html>

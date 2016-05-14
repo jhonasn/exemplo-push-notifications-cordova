@@ -1,0 +1,19 @@
+{
+  "name": "teste-notificacoes",
+  "version": "1.0.0",
+  "description": "teste de notificações android",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug-server": "node-debug server/bin/www",
+    "server": "node server/bin/www",
+    "android": "cordova run android --device"
+  },
+  "keywords": [
+    "test",
+    "push",
+    "notifications"
+  ],
+  "author": "Jhonas Nascimento",
+  "license": "MIT"
+}
