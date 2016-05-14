@@ -37,11 +37,13 @@ router.post('/enviar-notificacao', function(req, res, next) {
             "data": dataSend
         })
         .end(function (response) {
-            res.send(200, null);
+            //res.send(200, null);
         })
         .error(function (err) {
             next(err);
         });
+
+	res.send(200);
 });
 
 router.post('/registrar-dispositivo', function (req, res, next) {
